@@ -1,106 +1,101 @@
 let resumeData = {
-    "imagebaseurl":"https://rbhatia46.github.io/",
-    "name": "Rahul Bhatia",
-    "role": "Frontend Developer and Data Scientist",
-    "linkedinId":"Your LinkedIn Id",
-    "skypeid": "Your skypeid",
-    "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
-    "socialLinks":[
-        {
-          "name":"linkedin",
-          "url":"https://www.linkedin.com/in/rahul-bhatia-67ba08121/",
-          "className":"fa fa-linkedin"
-        },
-        {
-          "name":"github",
-          "url":"http://github.com/rbhatia46",
-          "className":"fa fa-github"
-        },
-        {
-          "name":"skype",
-          "url":"http://twitter.com/rbhatia46",
-          "className":"fa fa-twitter"
-        }
-      ],
-    "aboutme":"I am currently a pre-final year student at The LNM Institute of Information Technology and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
-    "address":"India",
-    "website":"https://rbhatia46.github.io",
-    "education":[
-      {
-        "UniversityName":"The LNM Insitute of Information Technology",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Aug",
-        "YearOfPassing":"2020",
-        "Achievements":"Some Achievements"
-      },
-      {
-        "UniversityName":"Some University",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Jan",
-        "YearOfPassing":"2018",
-        "Achievements":"Some Achievements"
-      }
-    ],
-    "work":[
-      {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
-      },
-      {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
-      }
-    ],
-    "skillsDescription":"Your skills here",
-    "skills":[
-      {
-        "skillname":"HTML5"
-      },
-      {
-        "skillname":"CSS"
-      },
-      {
-        "skillname":"Reactjs"
-      }
-    ],
-    "portfolio":[
-      {
-        "name":"project1",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
-      },
-      {
-        "name":"project2",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/project.jpg"
-      },
-      {
-        "name":"project3",
-        "description":"mobileapp",  
-        "imgurl":"images/portfolio/project2.png"
-      },
-      {
-        "name":"project4",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
-      }
-    ],
-    "testimonials":[
-      {
-        "description":"This is a sample testimonial",
-        "name":"Some technical guy"
-      },
-      {
-        "description":"This is a sample testimonial",
-        "name":"Some technical guy"
-      }
-    ]
-  }
-  
-  export default resumeData
+  imagebaseurl:
+    "https://media-exp1.licdn.com/dms/image/C4D03AQHZ4Iwsfu2MIQ/profile-displayphoto-shrink_200_200/0/1581049913153?e=1615420800&v=beta&t=pr0JJHSX4Z4fqplVXqR-TMdBw5QzOF9Ar4vKFaDtPIA",
+  name: "Iurii Kogan",
+  role: "Frontend Developer and Dog Lover",
+  linkedinId: "http://www.linkedin.com/in/iuriikogan",
+  skypeid: "koganiurii",
+  roleDescription:
+    "I like dabbling in various parts of frontend development and like to learn about new technologies, and running away to the woods with my dog.",
+  socialLinks: [
+    {
+      name: "linkedin",
+      url: "https://www.linkedin.com/in/iuriikogan/",
+      className: "fa fa-linkedin"
+    },
+    {
+      name: "github",
+      url: "http://github.com/iuriikogan/",
+      className: "fa fa-github"
+    }
+  ],
+  aboutme:
+    "I am currently a currently an Account Executive for a Data Analytics company, and I write code in my free time. I'm always looking for opportunies to connect or to contribute, Please contact me if you have any questions or feedback!",
+  address: "Bucharest Romania",
+  website: "https://www.github.com/iuriikogan",
+  education: [
+    {
+      UniversityName: "Washtenaw College",
+      YearOfLeaving: "2010"
+    }
+  ],
+  work: [
+    {
+      CompanyName: "Loginworks Softwares",
+      specialization: "Account Executive",
+      MonthOfLeaving: "Currently Employed"
+    },
+    {
+      CompanyName: "GoodShine.io",
+      specialization: "Founder",
+      MonthOfLeaving: "July",
+      YearOfLeaving: "2020",
+      Achievements: "Founded and ran an on demand car washs service"
+    }
+  ],
+  skillsDescription: "Your skills here",
+  skills: [
+    {
+      skillname: "HTML5"
+    },
+    {
+      skillname: "CSS"
+    },
+    {
+      skillname: "Reactjs"
+    },
+    {
+      skillname: "Nodejs"
+    },
+    {
+      skillname: "Typescript"
+    },
+    {
+      skillname: "Jquery"
+    }
+  ],
+  portfolio: [
+    {
+      name: "Travel Tracker",
+      description: "SPA",
+      imgurl: "https://github.com/iuriikogan/react-express-travel-tracker"
+    },
+    {
+      name: "project2",
+      description: "mobileapp",
+      imgurl: "images/portfolio/project.jpg"
+    },
+    {
+      name: "project3",
+      description: "mobileapp",
+      imgurl: "images/portfolio/project2.png"
+    },
+    {
+      name: "project4",
+      description: "mobileapp",
+      imgurl: "images/portfolio/phone.jpg"
+    }
+  ],
+  testimonials: [
+    {
+      description: "This is a sample testimonial",
+      name: "Some technical guy"
+    },
+    {
+      description: "This is a sample testimonial",
+      name: "Some technical guy"
+    }
+  ]
+};
+
+export default resumeData;

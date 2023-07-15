@@ -6,11 +6,6 @@ export default  class Resume extends Component {
       <section id="resume">
 
          <div className="row education">
-
-            <div className="three columns header-col">
-               <h1><span>Education</span></h1>
-            </div>
-
             <div className="nine columns main-col">
               {
                 resumeData.education && resumeData.education.map((item)=>{

@@ -326,7 +326,7 @@ ul#nav li.current a {
    padding-right: 10%;
 }
 
-.education,
+.certification,
 .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
@@ -348,6 +348,12 @@ ul#nav li.current a {
 #resume .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
+}
+#resume .image {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
 }
 
 /*----------------------------------------------*/

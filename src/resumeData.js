@@ -1,14 +1,15 @@
 let resumeData = {
   imagebaseurl:
     "https://media-exp1.licdn.com/dms/image/C4D03AQHZ4Iwsfu2MIQ/profile-displayphoto-shrink_200_200/0/1581049913153?e=1615420800&v=beta&t=pr0JJHSX4Z4fqplVXqR-TMdBw5QzOF9Ar4vKFaDtPIA",
-  name: "Iurii Ungureanu Kogan",
-  role: "Kubernetes Engineer, Liflong Learner, Diver, Dog Lover",
+  fullName: "Iurii Ungureanu Kogan",
+  name: "Iurii",
+  role: "Kubernetes Enthusiast and Presales Specialist",
   linkedinId: "http://www.linkedin.com/in/iuriikogan",
   skypeid: "koganiurii",
   emailId: "koganiurii@gmail.com",
   phoneNum: "+40725026232",
   roleDescription:
-    "Results-driven Presales System Engineer with a strong focus on implementing complex cloud data management strategies. Certified Kubernetes Administrator (CKA) and Certified Kubernetes Application Developer (CKAD) with expertise in building microservices using Golang, Node.js, and React. Well-versed in hyperscaler platforms, including AWS, Azure, and GCP. Skilled in application migration and pipelines architecture design, and providing disaster recovery and business continuity recommendations.",
+    "I am a Results-driven Presales System Engineer with a strong focus on cloud data management strategies. Certified Kubernetes Administrator (CKA) and Certified Kubernetes Application Developer (CKAD) with expertise in building microservices using Golang, Node.js, and React. Well-versed in hyperscaler platforms, including AWS, Azure, and GCP. Skilled in application migration and pipelines architecture design, and providing disaster recovery and business continuity recommendations.",
   socialLinks: [
     {
       name: "linkedin",
@@ -21,28 +22,26 @@ let resumeData = {
       className: "fa fa-github"
     }
   ],
-  aboutme:
-    "I am currently a currently a Kasten (kubernetes-native datam management) product presales specialist for our parent company, Veeam. I write code in my free time. I'm always looking for opportunies to connect or to contribute, Please contact me if you have any questions or feedback!",
   address: "Bucharest Romania",
   website: "https://www.github.com/iuriikogan",
-  certifications: [
+  certification: [
     {
       certificationName: "Certified Kubernetes Administrator (CKA)",
       issuedBy: "Cloud Native Computing Foundation",
       url: "https://www.credly.com/badges/7943f51b-b2a8-45b4-a07f-aba34e2d4a34",
-      imgUrl: "https://images.credly.com/size/110x110/images/2b9b5b1a-5b0a-4b0a-9b0a-5b0a9b0a5b0a/CKA.png"
+      certificationDate: "May 2022"
     },
     {
       certificationName: "Certified Kubernetes Application Developer (CKAD)",
       issuedBy: "Cloud Native Computing Foundation",
       url: "https://www.credly.com/badges/5744d84b-ba6a-40a8-9935-271b407f79f0",
-      imgurl: "https://images.credly.com/size/110x110/images/2b9b5b1a-5b0a-4b0a-9b0a-5b0a9b0a5b0a/CKAD.png"
+      certificationDate: "October 2022"
     },
     {
-      name: "Google Certified Professional in Project Management",
-      issuedBy: "Google/Coursera",
+      certificationName: "Google Certified Professional in Project Management",
+      issuedBy: "Google / Coursera",
       url: "https://www.credly.com/badges/aadc08d8-ce4e-466d-9f23-d33bc168efea",
-      imgUrl: "https://images.credly.com/size/110x110/images/771cff46-3573-4d12-bfd8-528745f00957/GCC_badge_PGM_1000x1000.png"
+      certificationDate: "December 2022"
     }
   ],
   work: [
@@ -122,7 +121,7 @@ let resumeData = {
     {
       name: "K8s-File-Churner",
       description: "Go application to generate file churn, built for deployment in kubernetes",
-      imgurl: "https://user-images.githubusercontent.com/47596530/251654766-76742aa7-5e4b-451c-8105-f669af983065.png",
+      imgUrl: "https://user-images.githubusercontent.com/47596530/251654766-76742aa7-5e4b-451c-8105-f669af983065.png",
       url: "https://github.com/iuriikogan/k8s-file-churner/"
     }
   ]

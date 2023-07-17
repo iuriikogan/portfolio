@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
+    "fsevents": "^2.3.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-scripts": "2.1.1",
-    "serve": "^14.2.0"
+    "serve": "^14.2.0",
+    "v2": "^0.0.3"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -25,7 +25,26 @@ let resumeData = {
     "I am currently a currently a Kasten (kubernetes-native datam management) product presales specialist for our parent company, Veeam. I write code in my free time. I'm always looking for opportunies to connect or to contribute, Please contact me if you have any questions or feedback!",
   address: "Bucharest Romania",
   website: "https://www.github.com/iuriikogan",
-
+  certifications: [
+    {
+      certificationName: "Certified Kubernetes Administrator (CKA)",
+      issuedBy: "Cloud Native Computing Foundation",
+      url: "https://www.credly.com/badges/7943f51b-b2a8-45b4-a07f-aba34e2d4a34",
+      imgUrl: "https://images.credly.com/size/110x110/images/2b9b5b1a-5b0a-4b0a-9b0a-5b0a9b0a5b0a/CKA.png"
+    },
+    {
+      certificationName: "Certified Kubernetes Application Developer (CKAD)",
+      issuedBy: "Cloud Native Computing Foundation",
+      url: "https://www.credly.com/badges/5744d84b-ba6a-40a8-9935-271b407f79f0",
+      imgurl: "https://images.credly.com/size/110x110/images/2b9b5b1a-5b0a-4b0a-9b0a-5b0a9b0a5b0a/CKAD.png"
+    },
+    {
+      name: "Google Certified Professional in Project Management",
+      issuedBy: "Google/Coursera",
+      url: "https://www.credly.com/badges/aadc08d8-ce4e-466d-9f23-d33bc168efea",
+      imgUrl: "https://images.credly.com/size/110x110/images/771cff46-3573-4d12-bfd8-528745f00957/GCC_badge_PGM_1000x1000.png"
+    }
+  ],
   work: [
     {
       CompanyName: "Kasten by Veeam",
@@ -99,14 +118,14 @@ let resumeData = {
       skillname: "Databases (PostgreSQL, MongoDB, Redis)"
     },
   ],
-  // portfolio: [
-  //   {
-  //     name: "K8s-File-Churner",
-  //     description: "Go application to generate file churn, built for deployment in kubernetes",
-  //     imgurl: "https://user-images.githubusercontent.com/47596530/251654766-76742aa7-5e4b-451c-8105-f669af983065.png",
-  //     url: "https://github.com/iuriikogan/k8s-file-churner/"
-  //   }
-  // ]
+  portfolio: [
+    {
+      name: "K8s-File-Churner",
+      description: "Go application to generate file churn, built for deployment in kubernetes",
+      imgurl: "https://user-images.githubusercontent.com/47596530/251654766-76742aa7-5e4b-451c-8105-f669af983065.png",
+      url: "https://github.com/iuriikogan/k8s-file-churner/"
+    }
+  ]
 };
 
 export default resumeData;

@@ -5,19 +5,17 @@ export default  class Resume extends Component {
     return (
       <section id="resume">
 
-         <div className="row education">
+         <div className="row certifications">
             <div className="nine columns main-col">
               {
-                resumeData.education && resumeData.education.map((item)=>{
+                resumeData.certifications && resumeData.certifications.map((item)=>{
                   return(
                     <div className="row item">
                        <div className="twelve columns">
-                          <h3>{item.UniversityName}</h3>
+                          <h3>{item.certficationName}</h3>
                           <p className="info">
-                          {item.specialization}
-                          <span>&bull;</span> <em className="date">{item.MonthOfPassing} {item.YearOfPassing}</em></p>
-                          <p>
-                          {item.Achievements}
+                          {item.issuedBy}
+                          <image href={item.imgUrl}><link hred={item.imgUrl}></link></image>
                           </p>
                        </div>
                     </div>

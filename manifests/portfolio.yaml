@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: portfolio
-        image: iuriikogan/portfolio:v1
+        image: iuriikogan/portfolio:v2
         resources:
           requests:
             memory: "64Mi"

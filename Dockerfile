@@ -17,18 +17,12 @@ RUN --mount=type=cache,target=/var/cache/apt \
 # final Stage
 
 FROM nginx:1.21.0-alpine as production
-
-ARG UID=10001
-RUN adduser \
-    --disabled-password \
-    --gecos "" \
-    --home "/nonexistent" \
-    --shell "/sbin/nologin" \
-    --no-create-home \
-    --uid "${UID}" \
-    portfolio
-USER portfolio
-
+# set nologin shell for root user
+RUN chsh -sd /usr/sbin/nologin root
+# add non-priveleged user and group and use that to run the container
+RUN groupadd -r portfolio \
+    && useradd -r -g portfolio portfolio
+USER portfolio:portfolio
 ENV NODE_ENV production
 # Copy built assets from `builder` image
 COPY --from=builder /app/build /usr/share/nginx/html

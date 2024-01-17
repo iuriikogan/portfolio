@@ -9,7 +9,7 @@ let resumeData = {
   emailId: "koganiurii@gmail.com",
   phoneNum: "+40725026232",
   roleDescription:
-    "I am a Results-driven Presales System Engineer with a strong focus on cloud data management strategies. Certified Kubernetes Administrator (CKA) and Certified Kubernetes Application Developer (CKAD) with expertise in building microservices using Golang, Node.js, and React. Well-versed in hyperscaler platforms, including AWS, Azure, and GCP. Skilled in application migration and pipelines architecture design, and providing disaster recovery and business continuity recommendations.",
+    "I'm a Results-driven pre-sales specialist with a focus on cloud-based solutions for European and international companies. Certified in Kubernetes administration and application development, have built microservices in Node/React and Go. I am experienced in hyper scaler platforms, such as AWS, Azure, and GCP. Skilled in application migration, landing zone and pipelines architecture design, cloud hardening, and providing disaster recovery and business continuity recommendations. Experienced in container-based architectures and technologies like AKS, EKS, OpenShift, Terraform, ArgoCD, Github actions, Jenkins, Velero, Kyverno, Kasten.",
   socialLinks: [
     {
       name: "linkedin",
@@ -46,11 +46,19 @@ let resumeData = {
   ],
   work: [
     {
+      CompanyName: "Waydev",
+      specialization: "Enterprise Solutions Engieer",
+      MonthOfLeaving: "Currently Employed",
+      MonthOfStarting: "Sept",
+      YearOfStarting: 2023
+    }, 
+    {
       CompanyName: "Kasten by Veeam",
       specialization: "Product Presales Specialist",
-      MonthOfLeaving: "Currently Employed",
       MonthOfStarting: "August",
-      YearOfStarting: 2021
+      YearOfStarting: 2021,
+      MonthOfLeaving: "Sept",
+      YearOfLeaving: 2023
     },
     {
       CompanyName: "Loginworks Softwares",

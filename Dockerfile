@@ -3,7 +3,7 @@
 # build stage
 FROM node:16-bullseye-slim as builder
 
-RUN apt-get update && apt-get install -y --no-install-recommends dumb-init
+RUN apt-get update && apt-get install -y --no-install-recommends
 
 WORKDIR /app
 

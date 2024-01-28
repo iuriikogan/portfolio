@@ -23,7 +23,7 @@ RUN --mount=type=cache,target=/app/cache/apt \
 # final Stage
 ARG PORT=80
 
-FROM nginx:1.16.0-alpine as production
+FROM nginx:mainline-alpine3.18-slim as production
 
 # Copy built assets from `builder` image
 COPY --from=builder --chown=nging:nginx /app/build /usr/share/nginx/html

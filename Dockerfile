@@ -1,29 +1,35 @@
 # syntax=docker/dockerfile:1
+
 # build stage
-FROM node:16-alpine as builder
+FROM node:16-bullseye-slim as builder
+
+RUN apt-get update && apt-get install -y --no-install-recommends dumb-init
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
+COPY --chown=node:node package.json package-lock.json ./
 
-RUN --mount=type=cache,target=/var/cache/apt \
-    npm install
+RUN --mount=type=cache,target=/app/cache/apt \
+    npm ci --omit=dev
 
-COPY . .
+ARG NODE_ENV=production
+ENV NODE_ENV=${NODE_ENV}
 
-RUN --mount=type=cache,target=/var/cache/apt \
+COPY --chown=node:node . .
+
+RUN --mount=type=cache,target=/app/cache/apt \
     npm run build
 
 # final Stage
+ARG PORT=80
 
-FROM nginx:1.21.0-alpine as production
+FROM nginx:1.16.0-alpine as production
 
-ENV NODE_ENV production
 # Copy built assets from `builder` image
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder --chown=nging:nginx /app/build /usr/share/nginx/html
 # Add your nginx.conf
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 # Expose port
-EXPOSE 80
+EXPOSE ${PORT}
 # Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+ENTRYPOINT [ "nginx", "-g", "daemon off;"]

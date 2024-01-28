@@ -62,7 +62,7 @@ let resumeData = {
     },
     {
       CompanyName: "Loginworks Softwares",
-      specialization: "Account Executive",
+      specialization: "Sales Operations Manager",
       MonthOfStarting: "January",
       YearOfStarting: 2020,
       MonthOfLeaving: "May",

@@ -21,15 +21,15 @@ RUN --mount=type=cache,target=/app/cache/apt \
     npm run build
 
 # final Stage
+# expose port ARG
 ARG PORT=80
-
+# Use nginx as base image alpine 3.18-slim as the production base image
 FROM nginx:mainline-alpine3.18-slim as production
-
-# Copy built assets from `builder` image
+# Copy static output from npm build to nginx html directory
 COPY --from=builder --chown=nging:nginx /app/build /usr/share/nginx/html
-# Add your nginx.conf
+# Add  nginx configuration to the default dir in the container
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-# Expose port
+# Expose port ARG
 EXPOSE ${PORT}
 # Start nginx
 ENTRYPOINT [ "nginx", "-g", "daemon off;"]

@@ -9,7 +9,7 @@ let resumeData = {
   emailId: "koganiurii@gmail.com",
   phoneNum: "+40725026232",
   roleDescription:
-    "I'm a Results-driven pre-sales specialist with a focus on cloud-based solutions for European and international companies. Certified in Kubernetes administration and application development, have built microservices in Node/React and Go. I am experienced in hyper scaler platforms, such as AWS, Azure, and GCP. Skilled in application migration, landing zone and pipelines architecture design, cloud hardening, and providing disaster recovery and business continuity recommendations. Experienced in container-based architectures and technologies like AKS, EKS, OpenShift, Terraform, ArgoCD, Github actions, Jenkins, Velero, Kyverno, Kasten.",
+    "As an Enterprise Systems Engineer at Waydev, I helped engineering leaders gain visibility into their work and align it with business initiatives. Previously, I was a Kasten Presales Specialist, where I exceeded my monthly sales growth targets and KPIs by cultivating relationships with executive-level decision-makers and demonstrating the value of Kasten solutions. I also collaborated with sales enablement teams to create internal sales processes, tools, and visual assets and implemented standardized reporting and forecasting templates.  I am passionate about learning new technologies and staying updated on the latest trends and best practices in the cloud and Kubernetes domains. I am a native English speaker and I enjoy working with diverse and cross-functional teams and contributing to the success of our customers and partners.",
   socialLinks: [
     {
       name: "linkedin",
@@ -86,7 +86,6 @@ let resumeData = {
       Achievements: ""
     }
   ],
-  skillsDescription: "Your skills here",
   skills: [
     {
       skillname: "Kubernetes",
@@ -95,31 +94,31 @@ let resumeData = {
       skillname: "Kubernetes Application Development"
     }, 
     {
-      skillname: "Managed Kubernetes Services (AKS, EKS, GKE)"
+      skillname: "Managed Kubernetes Services (AKS, EKS, OpenShift)"
     }, 
     {
-      skillname: "Infrastructure as Code (Terraform, Pulumi)"
+      skillname: "Infrastructure as Code (Terraform, Helm, Kustomize)"
     },
     {
       skillname: "Kubernetes Data Management, Backup and Disaster Recovery"
     },
     {
-      skillname: "Cloud Native Storage (CSI, Rook, Longhorn)"
+      skillname: "Cloud Native Storage (CSI, Rook, Ceph, Longhorn)"
     },
     {
-      skillname: "Cloud Native Observability (Prometheus, Grafana, Jaeger)"
+      skillname: "Cloud Native Observability (Prometheus, Grafana, Loki)"
     },
     {
-      skillname: "Cloud Native Authenication and Authorization (OIDC, OPA, RBAC, CertManger/LetsEncrypt)"
+      skillname: "Cloud Native Authenication and Authorization (OIDC, OPA, PSP, Kyverno, RBAC, CertManger/LetsEncrypt)"
     },
     {
-      skillname: "Continuous Integration and Continuous Delivery (GitOps, ArgoCD, Flux)"
+      skillname: "Continuous Integration and Continuous Delivery (Github Actions, ArgoCD)"
     },
     {
-      skillname: "Development (Golang, Node.js, React)"
+      skillname: "Development (Golang, Node.js)"
     },
     {
-      skillname: "Cloud Platforms (AWS, Azure, GCP)"
+      skillname: "Cloud Platforms (AWS, Azure)"
     },
     {
       skillname: "Databases (PostgreSQL, MongoDB, Redis)"

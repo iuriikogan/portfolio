@@ -21,11 +21,14 @@ spec:
     spec:
       containers:
       - name: portfolio
-        image: iuriikogan/portfolio:v2
+        image: iuriikogan/portfolio:v1.1.9
         resources:
           requests:
             memory: "64Mi"
             cpu: "100m"
+          limits:
+            memory: "1280Mi"
+            cpu: "1000m"
         ports:
         - containerPort: 80
 ---
@@ -44,11 +47,12 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: portfolio-ingress 
+  name: portfolio-ingress
+  namespace: portfolio 
 spec:
   ingressClassName: nginx
   rules:
-  - host: "www.iuriikogan.dev"
+  - host: portfolio.localhost
     http:
         paths:
         - pathType: Prefix

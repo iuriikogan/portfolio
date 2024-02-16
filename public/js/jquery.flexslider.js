@@ -307,7 +307,7 @@
 
           methods.directionNav.update();
 
-          slider.directionNav.bind(eventType, function(event) {
+          slider.directionNav.on(eventType, function(event) {
             event.preventDefault();
             var target;
 

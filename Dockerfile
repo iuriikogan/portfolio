@@ -3,19 +3,17 @@
 # build stage
 FROM node:16-bullseye-slim as builder
 
-RUN apt-get update && apt-get install -y --no-install-recommends
-
 WORKDIR /app
 
-COPY --chown=node:node package.json package-lock.json ./
+COPY package.json package-lock.json ./
 
 RUN --mount=type=cache,target=/app/cache/apt \
-    npm ci --omit=dev
+    npm install
 
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 
-COPY --chown=node:node . .
+COPY . .
 
 RUN --mount=type=cache,target=/app/cache/apt \
     npm run build

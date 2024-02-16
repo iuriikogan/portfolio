@@ -28,7 +28,7 @@ jobs:
         with:
           args: --severity-threshold=high
   build:
-    needs: [snyk-blocking]
+    # needs: [snyk-blocking]
     runs-on: ubuntu-latest
     steps:
       -

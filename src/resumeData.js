@@ -109,7 +109,7 @@ let resumeData = {
       skillname: "Cloud Native Observability (Prometheus, Grafana, Loki)"
     },
     {
-      skillname: "Cloud Native Authenication and Authorization (OIDC, OPA, PSP, Kyverno, RBAC, CertManger/LetsEncrypt)"
+      skillname: "Cloud Native Authenication and Authorization (SSO, OPA, Kyverno, RBAC, CertManger/LetsEncrypt)"
     },
     {
       skillname: "Continuous Integration and Continuous Delivery (Github Actions, ArgoCD)"

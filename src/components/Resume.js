@@ -13,7 +13,7 @@ export default class Resume extends Component {
             {
               resumeData.work && resumeData.work.map((item) => {
                 return (
-                  <div className="row item">
+                  <div className="row item" key={item}>
                     <div className="twelve columns">
                       <h3>{item.CompanyName}</h3>
                       <p className="info">

@@ -486,7 +486,7 @@ ul#nav li.current a {
    }
 }
 
-@-moz-keyframes development {
+@-moz-keyframes continuous {
    0% {
       width: 0px;
    }

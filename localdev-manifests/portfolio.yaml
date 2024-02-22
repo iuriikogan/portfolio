@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: portfolio
-        image: iuriikogan/portfolio:v1.1.24
+        image: iuriikogan/portfolio:lastest
         imagePullPolicy: Always
         securityContext:
           runAsUser: 65534
@@ -41,6 +41,14 @@ spec:
           limits:
             memory: "1280Mi"
             cpu: "1000m"
+        volumeMounts: 
+        - name: cache
+          mountPath: /var/cache/nginx
+        - name: tmp
+          mountPath: /tmp/nginx
+        - name: conf 
+          mountPath: /etc/nginx/nginx.conf
+          subPath: nginx.conf
         ports:
         - containerPort: 80
         livenessProbe: 
@@ -52,6 +60,44 @@ spec:
           timeoutSeconds: 1
           successThreshold: 1
           failureThreshold: 3
+      volumes: 
+      - name: cache
+        emptyDir: {}
+      - name: tmp
+        emptyDir: {}
+      - name: conf
+        configMap:
+          name: nginx-conf
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-conf
+  namespace: portfolio
+data:
+  nginx.conf: |
+    user  nginx;
+    worker_processes  1;
+    error_log  /var/log/nginx/error.log warn;
+    pid        /var/run/nginx.pid;
+    events {
+        worker_connections  1024;
+    }
+    http {
+        include       /etc/nginx/mime.types;
+        access_log  /var/log/nginx/access.log  main;
+        server {
+            listen       8080;
+            server_name  localhost;
+            location / {
+                root   /usr/share/nginx/html;
+                index  index.html index.htm;
+            }
+            location = /50x.html {
+                root   /usr/share/nginx/html;
+            }
+        }
+    }
 ---
 apiVersion: v1
 kind: Service

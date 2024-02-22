@@ -45,7 +45,7 @@ spec:
         - name: cache
           mountPath: /var/cache/nginx
         - name: run  
-          mountPath: /var/run/nginx
+          mountPath: /var/run
         ports:
         - containerPort: 80
         livenessProbe: 

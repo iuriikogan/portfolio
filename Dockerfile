@@ -19,8 +19,8 @@ RUN --mount=type=cache,target=/app/cache/apt \
     npm run build
 
 # final Stage
-# expose port ARG (specify a port higher than 1024 if running as non-root)
-ARG PORT=8080
+# expose port ARG
+ARG PORT=80
 # Use nginx as base image alpine 3.18-slim as the production base image
 FROM nginx:1.19 as production
 # Copy static output from npm build to nginx html directory

@@ -44,8 +44,8 @@ spec:
         volumeMounts: 
         - name: cache
           mountPath: /var/cache/nginx
-        - name: tmp
-          mountPath: /tmp/nginx
+        - name: run  
+          mountPath: /var/run/nginx
         ports:
         - containerPort: 80
         livenessProbe: 
@@ -60,7 +60,7 @@ spec:
       volumes: 
       - name: cache
         emptyDir: {}
-      - name: tmp
+      - name: run
         emptyDir: {}
 ---
 apiVersion: v1

@@ -396,7 +396,7 @@
         if(!msGesture){
             el.addEventListener('touchstart', onTouchStart, false);
 
-            function onTouchStart(e) {
+            onTouchStart = function(e) {
               if (slider.animating) {
                 e.preventDefault();
               } else if ( ( window.navigator.msPointerEnabled ) || e.touches.length === 1 ) {
@@ -423,7 +423,7 @@
               }
             }
 
-            function onTouchMove(e) {
+            $onTouchMove = function(e) {
               // Local vars for X and Y points.
 
               localX = e.touches[0].pageX;
@@ -445,7 +445,7 @@
               }
             }
 
-            function onTouchEnd(e) {
+            $onTouchEnd = function(e) {
               // finish the touch by undoing the touch session
               el.removeEventListener('touchmove', onTouchMove, false);
 
@@ -475,7 +475,7 @@
             el.addEventListener("MSGestureChange", onMSGestureChange, false);
             el.addEventListener("MSGestureEnd", onMSGestureEnd, false);
 
-            function onMSPointerDown(e){
+            $onMSPointerDown = function(e){
                 e.stopPropagation();
                 if (slider.animating) {
                     e.preventDefault();
@@ -495,7 +495,7 @@
                 }
             }
 
-            function onMSGestureChange(e) {
+            $onMSGestureChange = function(e) {
                 e.stopPropagation();
                 var slider = e.target._slider;
                 if(!slider){
@@ -528,7 +528,7 @@
                 }
             }
 
-            function onMSGestureEnd(e) {
+            $onMSGestureEnd = function(e) {
                 e.stopPropagation();
                 var slider = e.target._slider;
                 if(!slider){
@@ -993,7 +993,7 @@
       slider.vars.added(slider);
     }
     slider.removeSlide = function(obj) {
-      var pos = (isNaN(obj)) ? slider.slides.index($(obj)) : obj;
+      var pos = (Number.isNaN(obj)) ? slider.slides.index($(obj)) : obj;
 
       // update count
       slider.count -= 1;

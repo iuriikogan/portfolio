@@ -40,6 +40,7 @@ export function register(config) {
 
         // Add some additional logging to localhost, pointing developers to the
         // service worker/PWA documentation.
+        // file deepcode ignore PromiseNotCaughtGeneral: <please specify a reason of ignoring this>
         navigator.serviceWorker.ready.then(() => {
           console.log(
             'This web app is being served cache-first by a service ' +

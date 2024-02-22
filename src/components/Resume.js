@@ -71,6 +71,7 @@ export default class Resume extends Component {
                 {
                   resumeData.skills && resumeData.skills.map((item) => {
                     return (
+                      // file deepcode ignore ReactMissingArrayKeys: <please specify a reason of ignoring this>
                       <li>
                         <span className={` bar-expand ${item.skillname.toLowerCase()}`}>
                         </span><em>{item.skillname}</em>

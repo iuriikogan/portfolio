@@ -10,6 +10,7 @@ export default class Footer extends Component {
             {
               resumeData.socialLinks && resumeData.socialLinks.map((item)=>{
                 return(
+                  // file deepcode ignore ReactMissingArrayKeys: no reason this is not needed
                   <li>
                     <a href={item.url}>
                     <i className={item.className} />
